@@ -6,7 +6,7 @@
 	
     <target name="compile" depends="clean">
     	<mkdir dir="build/classes"/>    	
-        <javac sourcepath="." srcdir="src" destdir="build/classes">
+        <javac sourcepath="." srcdir="Education.src" destdir="build/classes">
         	<include name="**/*.java"/>
         </javac>
     </target>
