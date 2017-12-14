@@ -1,2 +1,6 @@
+sudo: required
+dist: trusty
 language: java
+services:
+- docker
 script: ant run
