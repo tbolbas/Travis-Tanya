@@ -6,6 +6,5 @@ services:
 script: ant run
 after_success:
 - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-- docker build -t hello-world .
-- docker tag hello-world $DOCKER_USER/hello-world
+- docker build -t $DOCKER_USER/hello-world .
 - docker push $DOCKER_USER/hello-world
