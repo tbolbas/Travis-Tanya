@@ -1,3 +1,4 @@
 FROM java:8
-ADD helloworld.jar helloworld.jar
+COPY build/jar/helloworld.jar /
+WORKDIR /
 CMD ["java","- jar", "helloworld.jar"]
